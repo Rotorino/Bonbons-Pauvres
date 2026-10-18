@@ -1,0 +1,14 @@
+node_modules
+.git
+.env
+.env.*
+!/.env.example
+npm-debug.log*
+*.log
+*** Add File: D:\pupazalupa\.env.example
+# Docker Compose configuration
+PGDATABASE=bonbons_pauvres
+PGUSER=bonbons
+PGPASSWORD=change_me
+SESSION_SECRET=replace_with_a_long_random_value
+DISCORD_WEBHOOK_URL=
