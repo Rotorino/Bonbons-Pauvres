@@ -3,7 +3,7 @@ node_modules/
 coverage/
 *.tsbuildinfo
 AGENTS.md
-api/
+/api/
 backend/
 frontend/
 docs/
