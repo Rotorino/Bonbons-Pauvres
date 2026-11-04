@@ -1,0 +1,17 @@
+::selection { background: #c1ae8e; color: #000; }
+
+.ritual { max-width: 1120px; margin: 0 auto; padding: 0 24px 144px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.ritual > div { border-top: 1px solid #252525; padding-top: 16px; }
+.ritual span { color: #c1ae8e; font-size: 13px; font-weight: 800; }
+.ritual h2 { margin: 32px 0 16px; font: 800 38px/1 var(--font-display), serif; }
+.ritual p { max-width: 25ch; color: #8f8f8f; font-size: 16px; }
+.home-faq { max-width: 1120px; margin: 0 auto; padding: 144px 24px; }
+.home-faq h2 { margin: 0 0 48px; font: 800 clamp(42px, 5vw, 72px)/1.04 var(--font-display), serif; }
+.home-faq details { border-top: 1px solid #252525; padding: 20px 0; }
+.home-faq summary { font-weight: 800; cursor: pointer; }
+.home-faq details p { max-width: 50ch; color: #8f8f8f; }
+
+@media (max-width: 800px) {
+  .ritual { grid-template-columns: 1fr; padding-bottom: 96px; }
+  .home-faq { padding-top: 96px; padding-bottom: 96px; }
+}

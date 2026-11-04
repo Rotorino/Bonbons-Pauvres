@@ -2,25 +2,38 @@
   "name": "bonbons-pauvres",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "start": "node backend/server.js",
-    "dev": "nodemon backend/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate"
   },
   "keywords": [],
   "author": "",
   "license": "AGPL-3.0-or-later",
-  "type": "commonjs",
+  "type": "module",
   "dependencies": {
-    "cookie-parser": "^1.4.7",
-    "dotenv": "^18.0.8",
-    "express": "^5.3.0",
-    "express-session": "^1.19.0",
+    "drizzle-orm": "^0.45.4",
+    "next": "^16.4.5",
     "pg": "^8.23.1",
-    "socks-proxy-agent": "^10.1.0"
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "zod": "^4.3.5"
   },
   "devDependencies": {
-    "nodemon": "^3.1.14"
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "drizzle-kit": "^0.31.11",
+    "eslint": "^9.39.1",
+    "eslint-config-next": "^16.4.5",
+    "prettier": "^3.9.10",
+    "typescript": "^5.9.3",
+    "vitest": "^5.1.0"
   }
 }

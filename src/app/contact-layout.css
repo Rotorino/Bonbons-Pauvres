@@ -1,0 +1,32 @@
+.contact-page {
+  grid-template-columns: minmax(0, 1.15fr) minmax(360px, 0.85fr);
+  gap: clamp(48px, 7vw, 96px);
+}
+
+.contact-page .page-intro h1 {
+  max-width: 8.5ch;
+  font-size: clamp(3.5rem, 6.2vw, 6.8rem);
+  line-height: 0.98;
+}
+
+.contact-form {
+  width: 100%;
+  min-width: 0;
+}
+
+.contact-form .consent {
+  display: grid;
+  grid-template-columns: 20px minmax(0, 1fr);
+  align-items: start;
+}
+
+.contact-form .consent input {
+  width: 16px;
+  height: 16px;
+  margin: 3px 0 0;
+}
+
+@media (max-width: 1280px) {
+  .contact-page { grid-template-columns: 1fr; }
+  .contact-page .page-intro h1 { max-width: 10ch; }
+}

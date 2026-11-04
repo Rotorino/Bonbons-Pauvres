@@ -1,0 +1,4 @@
+import type { Metadata } from 'next'; import Link from 'next/link';
+export const metadata: Metadata = { title: 'Журнал' };
+const articles = [{ slug: 'strange-candy', tag: 'Вкус', title: 'Почему странные конфеты становятся модными', text: 'История вкусов, которые сначала пугают, а потом не отпускают.' }, { slug: 'licorice', tag: 'Ингредиент', title: 'Лакрица: любовь с первого укуса', text: 'Разбираемся в финской солёной классике и её характере.' }];
+export default function ArticlesPage() { return <section className="page-intro"><p className="kicker">Заметки из кабаре</p><h1>Журнал</h1><p>Истории о редких ингредиентах и сладостях, которые не пытаются понравиться всем.</p><div className="article-grid">{articles.map((article, index) => <Link href={`/articles/${article.slug}`} className="article-card" key={article.slug}><span>0{index + 1} / {article.tag}</span><h2>{article.title}</h2><p>{article.text}</p><b>Читать <i>↗</i></b></Link>)}</div></section>; }

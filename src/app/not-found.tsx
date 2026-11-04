@@ -1,0 +1,1 @@
+import Link from 'next/link'; export default function NotFound() { return <section className="page-intro"><p className="kicker">Занавес опущен</p><h1>Этой сцены нет</h1><p>Проверьте адрес или вернитесь к коллекции.</p><Link href="/menu" className="button button--primary">В коллекцию</Link></section>; }
